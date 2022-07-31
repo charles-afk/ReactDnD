@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ReactDnD/static/css/main.073c9b0a.css",
+    "main.js": "/ReactDnD/static/js/main.02ef7bd2.js",
+    "static/js/787.e31456ab.chunk.js": "/ReactDnD/static/js/787.e31456ab.chunk.js",
+    "index.html": "/ReactDnD/index.html",
+    "main.073c9b0a.css.map": "/ReactDnD/static/css/main.073c9b0a.css.map",
+    "main.02ef7bd2.js.map": "/ReactDnD/static/js/main.02ef7bd2.js.map",
+    "787.e31456ab.chunk.js.map": "/ReactDnD/static/js/787.e31456ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.02ef7bd2.js"
+  ]
+}
