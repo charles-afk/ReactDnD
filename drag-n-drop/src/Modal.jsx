@@ -17,10 +17,10 @@ const Modal = ({tabs}) => {
     }
     
     const mainTabsJsx = <Fragment>
-        <div className='mainTab'>twitter</div>
-        <div className='mainTab'>facebook</div>
-        <div className='mainTab'>youtube</div>
-        <div className='mainTab'>linkedin</div>
+        <div className='mainTab' draggable="true">twitter</div>
+        <div className='mainTab' draggable="true">facebook</div>
+        <div className='mainTab' draggable="true">youtube</div>
+        <div className='mainTab' draggable="true">linkedin</div>
     </Fragment>;
 
     const extraTabsJsx = <Fragment>
@@ -47,6 +47,15 @@ const Modal = ({tabs}) => {
             setToggle(true)
         }
     }
+
+    const dragStart = (e) => {
+        e.dataTransfer.setData("text/html", e.target.id);
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+        const element = document.getElementsByClassName("mainTab");
+        element.addEventListener("dragstart", dragStart);
+      });
 
     return (
         <div className='Modal'>
