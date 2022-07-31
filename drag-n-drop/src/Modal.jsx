@@ -52,6 +52,17 @@ const Modal = ({tabs}) => {
         e.dataTransfer.setData("text/html", e.target.id);
     }
 
+    const dragOver = (e) => {
+        e.preventDefault();
+        e.dataTransfer.dropEffect = "move";
+    }
+
+    const drop = (e) => {
+        e.preventDefault();
+        const data = e.dataTransfer.getData("text/html");
+        e.target.appendChild(document.getElementById(data));
+    }
+
     window.addEventListener('DOMContentLoaded', () => {
         const element = document.getElementsByClassName("mainTab");
         element.addEventListener("dragstart", dragStart);
@@ -59,7 +70,7 @@ const Modal = ({tabs}) => {
 
     return (
         <div className='Modal'>
-            <div className='mainContainer'>   
+            <div className='mainContainer' id='target' onDrop={drop} onDragOver={dragOver}>   
                 {mainTabsJsx}
             </div>
             <div className="extraContainer">
