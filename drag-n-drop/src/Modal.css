@@ -1,0 +1,47 @@
+.mainTab {
+    border: 1px solid green;
+    width: 75px;
+    height: 22px;
+    background-color: black;
+    color: white;
+}
+
+.extraTab {
+    border: 1px solid green;
+    width: 75px;
+    height: 22px;
+    background-color: black;
+    color: white;
+    display: none;
+}
+
+.elips{
+    border: 1px solid green;
+    width: 75px;
+    height: 22px;
+    background-color: black;
+    color: white;
+    
+}
+
+.mainContainer{
+    display: flex;
+    margin-top: 10%;
+    cursor: pointer;
+}
+
+.extraContainer{
+    margin-top: 10%;
+    cursor: pointer;
+}
+
+.edit{
+    margin-top: 10%;
+    margin-left: 1%;
+    cursor: pointer;
+}
+
+.Modal {
+    display: flex;
+    justify-content: center;
+}
