@@ -1,5 +1,6 @@
 import './App.css';
-import Modal from './Modal';
+//import Modal from './Modal';
+import ModalTwo from './ModalTwo';
 function App() {
   const tabs = {
     'twitter' : {
@@ -34,7 +35,8 @@ function App() {
 
   return (
     <div className="App">
-      <Modal tabs={tabs}/>
+      {/* <Modal tabs={tabs}/> */}
+      <ModalTwo/>
     </div>
   );
 }
